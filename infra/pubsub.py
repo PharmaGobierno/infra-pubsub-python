@@ -94,6 +94,7 @@ class PubsubManager:
     def publish(
         self,
         topic: str,
+        *,
         message: object,
         attributes: Optional[dict] = None,
         ordering_key: Optional[str] = None,
