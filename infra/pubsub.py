@@ -18,7 +18,7 @@ class PubsubConnectionConf:
     def __init__(
         self,
         *,
-        service_account_file: Optional[str],
+        service_account_file: Optional[str] = None,
         enable_message_ordering: bool = False,
         max_messages: Optional[int] = None,
         max_bytes: Optional[int] = None,
