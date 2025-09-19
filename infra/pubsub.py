@@ -119,7 +119,6 @@ class PubsubManager:
 
         _params.update(
             {
-                "project": self._connection_conf.project_id,
                 "topic": self.__get_topic_path(topic),
                 "data": str.encode(dumps(message)),
             }
